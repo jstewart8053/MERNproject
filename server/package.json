@@ -1,13 +1,12 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "description": "",
+  "description": "MERNproject",
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js"
   },
-  "keywords": [],
-  "author": "",
+  "author": "Jennifer Stewart",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",

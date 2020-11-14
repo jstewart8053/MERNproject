@@ -10,4 +10,8 @@ app.use(bodyParser.json({ limit: "30mb", extended: true }))
 app.use(urlencoded.json({ limit: "30mb", extended: true }))
 app.use(cors());
 
-app.listen(process.env.PORT || 3000)
+const CONNECTION_URL = "mongodb+srv://user:Malayah09@cluster0.buw8j.mongodb.net/test?retryWrites=true&w=majority"
+const PORT = process.env.PORT || 5000
+
+mongoose.connect(CONNECTION_URL, { useNewUrlParser: true, useUnifiedTopology: true })
+//https://cloud.mongodb.com/v2/5f950b83f942f705fc72679e#clusters
