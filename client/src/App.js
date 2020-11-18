@@ -1,11 +1,15 @@
-import './App.css';
-import React from 'react'
+import React, { useState, useEffect } from 'react';
+import { Container, AppBar, Typography, Grow, Grid } from '@material-ui/core';
 
-function App() {
+
+const App = () => {
   return (
-    <div className="App">
-      <h1> App </h1>
-    </div>
+    <>
+      <p> works </p>
+      <Container maxWidth="lg">
+
+      </Container>
+    </>
   );
 }
 
