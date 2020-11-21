@@ -9,8 +9,14 @@ const App = () => {
         <Typography variant="h2" align="center">Memories</Typography>
         <img src={memories1} alt="memories" heighth='60' />
       </AppBar>
-    </Container>
+      <Grow in>
+        <Container>
+          <Grid container justify="space-between" alignItems="stretch" spacing="">
+          </Grid>
 
+        </Container>
+      </Grow>
+    </Container>
   );
 }
 
