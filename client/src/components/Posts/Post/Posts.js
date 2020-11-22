@@ -1,11 +1,11 @@
 import React from 'react';
 
-function Post() {
+function Posts() {
     return (
         <div>
-            <h1>Post</h1>
+            <h1>Posts</h1>
         </div>
     )
 }
 
-export default Post
+export default Posts
