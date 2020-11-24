@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Container, AppBar, Typography, Grow, Grid } from '@material-ui/core';
 import memories1 from "./images/memories1.jpg";
+import Posts from './components/Posts/Posts';
+import Form from './components/Form/Form';
 
 const App = () => {
   return (
