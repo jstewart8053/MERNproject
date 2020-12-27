@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import useStyles from "./styles";
 import { TextField, Button, Typography, Paper } from "@material-ui/core";
 import FileBase from "react-file-base64";
+import { createPost, updatePost } from "../../actions/posts";
 
 function Form() {
   const [postData, setPostData] = useState({
