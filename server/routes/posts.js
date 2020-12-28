@@ -1,11 +1,13 @@
-const express = require("express");
-const mongoose = require("mongoose");
-const getPosts = require("../controllers/posts.js");
-const createPost = require("../controllers/posts.js");
+// http://localhost:5000/posts
+
+import express from "express";
+
+import { getPosts, getPost, createPost } from "../controllers/posts.js";
+
 const router = express.Router();
 
-// http://localhost:5000/posts
 router.get("/", getPosts);
 router.post("/", createPost);
+router.get("/:id", getPost);
 
-module.exports = router;
+export default router;
