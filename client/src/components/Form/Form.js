@@ -19,11 +19,11 @@ function Form() {
   const clear = () => {};
 
   return (
-    <Paper>
+    <Paper className={classes.paper}>
       <form
         autoComplete="off"
         noValidate
-        className={classes.form}
+        className={`${classes.root} ${classes.form}`}
         onSubmit={handleSubmit}
       >
         <Typography variant="h6">Creating a Memory</Typography>
@@ -31,8 +31,8 @@ function Form() {
           name="creator"
           variant="outlined"
           label="Creator"
+          fullWidth
           value={postData.creator}
-          fullWidthvalue
           onChange={(e) =>
             setPostData({ ...postData, creator: e.target.value })
           }
@@ -41,16 +41,16 @@ function Form() {
           name="title"
           variant="outlined"
           label="Title"
+          fullWidth
           value={postData.title}
-          fullWidthvalue
           onChange={(e) => setPostData({ ...postData, title: e.target.value })}
         />
         <TextField
           name="message"
           variant="outlined"
           label="Message"
+          fullWidth
           value={postData.message}
-          fullWidthvalue
           onChange={(e) =>
             setPostData({ ...postData, message: e.target.value })
           }
@@ -59,8 +59,8 @@ function Form() {
           name="tags"
           variant="outlined"
           label="Tags"
+          fullWidth
           value={postData.tags}
-          fullWidthvalue
           onChange={(e) => setPostData({ ...postData, tags: e.target.value })}
         />
         <div className={classes.fileInput}>
